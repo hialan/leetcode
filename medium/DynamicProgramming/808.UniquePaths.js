@@ -6,11 +6,11 @@
  * @return {number}
  */
 var uniquePaths = function(m, n) {
-    let pathCounts = [];
-    
-    for(let x=0;x<m;x++) {
-        pathCounts[x] = 1;
+    if (!m || !n) {
+        return 0;
     }
+
+    let pathCounts = new Array(m).fill(1);
 
     for(let y=1;y<n;y++){
         for(let x=1;x<m;x++) {
