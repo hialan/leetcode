@@ -1,8 +1,8 @@
-import java.util.ArrayList;
+import java.util.HashSet;
 
 class Solution {
     public boolean isHappy(int n) {
-        ArrayList<Integer> usedNumber = new ArrayList<Integer>();
+        HashSet<Integer> usedNumber = new HashSet<>();
         usedNumber.add(n);
 
         while(true) {
